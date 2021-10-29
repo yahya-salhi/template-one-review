@@ -95,6 +95,7 @@ body{
   position: absolute;
    top: calc(100% + 15px);
    display: none;
+   z-index: 1;
 
 }
 .header .links ul li a {
@@ -122,3 +123,30 @@ body{
 .header .links:hover ul {
     display: block;
 }
+/* start landing section */
+.landing{
+    position: relative;
+    background-size: cover;
+    background-image: url(/image/landing.jpg);
+    height:calc(100vh - 64px) ;
+}
+.landing h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 3.125rem;
+    color: var(--main-color);
+}
+.landing .into-text p{
+    font-size:1.18rem ;
+    line-height: 1.8;
+}
+.landing .into-text{
+    position: absolute;
+    text-align: center;
+    width: 18.75rem;
+    max-width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* end landing section */
