@@ -60,3 +60,28 @@ body{
 .header .links{
     position: relative;
 }
+.container .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: flex-end;
+   
+}
+.container .links .icon span{
+    background-color: #333;
+    height: 2px;
+    margin-bottom: 5px;
+}
+.container .links .icon span:first-child{
+    width: 100%;
+}
+.container .links .icon span:last-child{
+    width: 100%;
+}
+.container .links .icon span:nth-child(2){
+    width: 60%;
+}
+.container .links:hover .icon span:nth-child(2) {
+    width: 100%;
+    transition: var(--main-duration);
+}
