@@ -94,6 +94,7 @@ body{
    right: 0;
   position: absolute;
    top: calc(100% + 15px);
+   display: none;
 
 }
 .header .links ul li a {
@@ -108,4 +109,16 @@ body{
 }
 .header .links ul li:not(:last-child)  {
    border-bottom: 2px solid #333;
+}
+.header .links ul::before{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent var(--secondary-color) transparent;
+    border-width: 15px;
+    right: 0;
+    top:-30px;
+}
+.header .links:hover ul{
+    display: block;
 }
