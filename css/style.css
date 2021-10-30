@@ -246,5 +246,27 @@ body{
     font-weight: 300;
     line-height: 1.6;
 }
+.image{
+    position: relative;
+    text-align: center;
+}
+.image img{
+    width: 280px;
+}
+.image::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: calc(100% + 100px);
+    background-color:var(--secondary-color);
+    right: 0;
+    top: -50px;
+    z-index: -1;
 
+}
+@media(max-width:1199px){
+    .image-column{
+        display:none;
+    }
+}
 /* end service */
