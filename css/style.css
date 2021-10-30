@@ -183,3 +183,68 @@ body{
     font-size: 17px;
   }
 /* end feature */
+/* start components */
+.special-heading{
+    color:  #ebeced;
+    font-size: 6.25rem;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.special-heading +p{
+    margin: -30px 0 0;
+    text-align: center;
+    color: #797979;
+    font-size: 1.25rem;
+}
+@media (max-width: 767px) {
+    .special-heading{
+        font-size:3.75rem ;
+    }
+    .special-heading +p{
+       margin-top: -20px;
+    }
+    
+}
+
+
+/* end components */
+/* start service */
+.service {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.service .serv-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
+}
+.serv{
+    display: flex;
+    margin-bottom: 40px;
+}
+@media (max-width:767px){
+    .serv{
+       flex-direction: column;
+       text-align: center;
+    }
+}
+.serv i{
+    color: var(--main-color);
+    flex-basis: 60px;
+}
+.serv .text {
+    flex:1;
+}
+.serv .text h3{
+    margin: 0 0 20px;
+}
+.serv .text p{
+    color: #444;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* end service */
