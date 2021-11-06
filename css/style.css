@@ -362,7 +362,7 @@ body{
 @media(max-width: 991px){
     .about-content .img::after,
     .about-content .img::before{
-        display: none;
+        display:  none;
     }
 }
 @media(max-width: 991px){
