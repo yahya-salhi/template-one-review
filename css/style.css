@@ -16,6 +16,7 @@
 }
 html{
     scroll-behavior: smooth;
+   
 }
 body{
     font-family: 'Cairo', sans-serif;
@@ -26,6 +27,7 @@ body{
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+ 
 }
 /* small */
 @media (min-width:768px){
@@ -53,6 +55,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .header img{
     width:60px;
@@ -434,3 +437,13 @@ body{
           color:var(--main-color);
       }
   /* end footer */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:var(--secondary-color);
+}
+::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+   border-radius: 20px;
+}
